@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="BLUETOOTH"
+       android:textSize="36sp"
+      android:layout_marginLeft="70dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/bluetooth"
+        android:layout_marginLeft="100dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn On"
+            android:textColor="@color/red1"
+            android:background="@color/red"
+            android:layout_marginLeft="8dp"
+            android:onClick="On"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get visible"
+            android:textColor="@color/red1"
+            android:background="@color/red"
+            android:layout_marginLeft="5dp"
+            android:onClick="Visible"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List devices"
+            android:background="@color/red"
+            android:textColor="@color/red1"
+            android:layout_marginLeft="5dp"
+            android:onClick="list"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn off"
+            android:textColor="@color/red1"
+            android:background="@color/red"
+            android:layout_marginLeft="5dp"
+            android:onClick="off"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired devices"
+        android:textSize="30sp"
+        android:textColor="@color/red1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"></ListView>
+</LinearLayout>
